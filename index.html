@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="QALYN2.css">
+  <link href="https://fonts.google.com/specimen/Shippori+Mincho?preview.text=&preview.text_type=custom#standard-styles" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qalyn Mal</title>
+</head>
+<body>
+  <center>
+    <h1>Traditional Qalyn Calculator</h1>
+  </center>
+  <div>
+<label for="fname">Groom's name:</label>
+<input type="text" id="name" name="fname">
+  </div>
+  <div>
+  <label for="quantity">Starting bid:</label>
+<input type="number" id="bid" name="bid">
+  </div>
+  <div>
+    <label for="education">Education level:</label>
+    <select name="education" id="1">
+      <option value="free"></option>
+      <option value="1.5">undergraduate degree</option>
+      <option value="1.2">college degree</option>
+      <option value="1.05">high school degree</option>
+      <option value="0.9">middle school degree</option><br>
+    </select><br>
+    <label for="net">Family net worth:</label>
+    <select name="net" id="2">
+      <option value="free"></option>
+      <option value="2">more than 100,000$</option>
+      <option value="1.5">between 50,000$ and 100,000$</option>
+      <option value="1.2">less than 50,000$ </option><br>
+    </select><br>
+    <label for="skills">Skills:</label><br>
+    <input type="checkbox" id="3" name="music" value="200">
+    <label for="music">playing on instruments </label><br>
+    <input type="checkbox" id="4" name="cook" value="200">
+    <label for="cooking">cooking well</label><br>
+    <input type="checkbox" id="5" name="character" value="200">
+    <label for="character">easygoing character</label><br>
+    <input type="checkbox" id="6" name="sing" value="200">
+    <label for="sing">sings well</label><br>
+  </div>
+  <div>
+    <label for="age">Age:</label><br>
+    <input type="radio" id="7" name="age" value="1.5">
+    <label for="age">between 18-23</label><br>
+    <input type="radio" id="8" name="age" value="1.2">
+    <label for="age">between 24-27</label><br>
+    <input type="radio" id="9" name="age" value="0.95">
+    <label for="age">28+</label><br>
+  </div>
+  <div>
+    <label for="rep">Reputation:</label><br>
+    <input type="checkbox" id="10" name="rep" value="200">
+    <label for="rep">gossips about his parent's attitude</label><br>
+    <input type="checkbox" id="11" name="rep" value="200">
+    <label for="rep">gossips about his character</label><br>
+    <input type="checkbox" id="12" name="rep" value="200">
+    <label for="rep">general gossips around his person</label><br>
+  </div>
+  <div>
+    <label for="love">Love letter:</label><br>
+<textarea id="love" name="love" rows="4" cols="50">
+</textarea>
+    </div>
+  <button onclick="makeCalculation()">Calculate</button>
+  <div id="result" class="result">
+  </div>
+  <script src="QALYN3.js"></script>
+</body>
+</html>
